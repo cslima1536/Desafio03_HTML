@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 Fomulário</title>
+</head>
+<body>
+    <div>
+        <label>Nome Completo </label>
+        <input id="nome" type="text" name="Nome Completo" placeholder="Digite seu Nome aqui">        
+    </div>
+    <br>
+    <div>
+        <label>Endereço  </label>
+        <input id="endereco" type="text" name="Endereço" placeholder="Digite seu Endereço">    
+    </div>
+    <br>
+    <div>
+        <label>Bairro </label>
+        <input id="bairro" type="text" name="Bairro" placeholder="digite seu Bairro">        
+    </div>
+    <br>
+    <div>
+        <label>Cidade </label>
+        <input id="cidade" type="text" name="Cidade" placeholder="Digite sua Cidade">        
+    </div>
+    <br>
+    <div>
+        <label>Estado</label>
+        <input id="estado" type="text" name="Estado" placeholder="digite seu Estado">
+    </div>
+    <br>
+    <div>
+        <label>CEP </label>
+        <input id ="CEP" type="text" name="CEP" placeholder="Digite seu CEP">
+    </div>
+    <br>
+    <div>
+        <label>Telefone </label>
+        <input id="telefone" type="tel" name="Telefone" placeholder="Digite seu Telefone">
+    </div>    
+    <br>   
+    <br>
+    <br>
+    <div>
+        <input type="button" value="Salvar" onclick="msg()">
+    </div>
+
+    <h5 id='nomeImpresso'></h5>
+    <h5 id='enderecoImpresso'></h5>
+    <h5 id='bairroImpresso'></h5>
+    <h5 id='cidadeImpresso'></h5>
+    <h5 id='estadoImpresso'></h5>
+    <h5 id='CEPImpresso'></h5>
+    <h5 id='telefoneImpresso'></h5>
+</body>
+</html>
+
+<script>
+
+var nome = document.getElementById(nome);
+    function msg() {
+      
+        var nome = document.getElementById('nome');
+        var nomeImpresso = document.getElementById('nomeImpresso');
+        nomeImpresso.innerHTML = "Nome Digitado: " + nome.value;
+        alert("Nome Informado : " + nome.value);
+
+        var enderecoImpresso = document.getElementById('enderecoImpresso');
+        enderecoImpresso.innerHTML = "Endereço:" + endereco.value;
+        var bairroImpresso = document.getElementById('bairroImpresso');
+        bairroImpresso.innerHTML = "Bairro Digitado: " + bairro.value;
+        var cidadeImpresso = document.getElementById('cidadeImpresso');
+        cidadeImpresso.innerHTML = "Cidade Digitada: " + cidade.value;
+        var estadoImpresso = document.getElementById('estadoImpresso');
+        estadoImpresso.innerHTML = "Estado Digitado: " + estado.value;
+        var CEPImpresso = document.getElementById('CEPImpresso');
+        CEPImpresso.innerHTML = "CEP Digitado: " + CEP.value;
+        var telefoneImpresso = document.getElementById('telefoneImpresso');
+        telefoneImpresso.innerHTML = "Fone Digitado: " + telefone.value;
+    }
+    </script>
